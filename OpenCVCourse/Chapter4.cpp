@@ -19,14 +19,14 @@ void main() {
     
     /*rectangle(img, Point(130, 226), Point(382, 286), Scalar(255, 255, 255),10);*/
     rectangle(img, Point(130, 226), Point(382, 286), Scalar(255, 255, 255), FILLED);
-    line(img, Point(130, 296),Point(382,296),Scalar(255,255,255),2);
+    line(img, Point(130, 296),Point(382,450),Scalar(255,255,255),2);
+
+    //putText(img, "hello world", Point(137, 262), FONT_HERSHEY_DUPLEX,2,Scalar(0, 69, 255),2); //the font is too big
+    //putText(img, "hello world", Point(137, 262), FONT_HERSHEY_DUPLEX, 1, Scalar(0, 69, 255), 2); //the font is better
+    putText(img, "hello world", Point(137, 262), FONT_HERSHEY_DUPLEX, 1, Scalar(0, 69, 255), 5); 
+
 
     imshow("Image", img);
-    
-
-
-
-
 
     waitKey(0);
 
