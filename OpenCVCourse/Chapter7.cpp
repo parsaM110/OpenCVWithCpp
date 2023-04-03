@@ -32,7 +32,7 @@ void getContours(Mat imgDil,Mat img) {
     {
         int area = contourArea(contours[i]);
         cout << area << endl;
-
+        // it is better to put these vectors out of for loop
         vector<vector<Point>> conPoly(contours.size()); // you have to define it out of loop but I get errors |-> corner polygon
         vector<Rect> boundRect(contours.size());
         string objectType;
