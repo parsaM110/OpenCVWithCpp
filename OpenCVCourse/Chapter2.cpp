@@ -15,8 +15,8 @@ void main() {
     Mat img = imread(path);
     Mat imgGray, imgBlur, imgCanny, imgDil, imgErode;
 
-    cvtColor(img, imgGray, COLOR_BGR2GRAY); // imgGray = cv.cvtColor(img,cv.COLOR_BGR2GRAY) in python
-    GaussianBlur(img, imgBlur,Size(3,3),5,0);
+    cvtColor(img, imgGray, COLOR_BGR2GRAY); // imgGray = cv.cvtColor(img ,cv.COLOR_BGR2GRAY) in python
+    GaussianBlur(imgGray, imgBlur,Size(3,3),5,0);
     //Canny(imgBlur, imgCanny, 50, 150);
     Canny(img, imgCanny, 25, 75); // decrease the value for canny make more edges
 
