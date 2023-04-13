@@ -53,7 +53,7 @@ Point getContours(Mat imgDil) {
             float peri = arcLength(contours[i], true); //true means it is a closed object
             approxPolyDP(contours[i], conPoly[i], 0.02 * peri, true); //could use 3 instead of 0.02 * peri
             /*drawContours(img, contours, i, Scalar(255, 0, 255), 2);*/
-            drawContours(img, conPoly, i, Scalar(255, 0, 255), 2);
+            /*drawContours(img, conPoly, i, Scalar(255, 0, 255), 2);*/
             cout << conPoly[i].size() << endl;
             boundRect[i] = boundingRect(conPoly[i]);
             myPoint.x = boundRect[i].x + boundRect[i].width / 2;
